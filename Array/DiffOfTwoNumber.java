@@ -3,8 +3,8 @@ class DiffOfTwoNumber    {
     
     public static void main(String args[]) {
         
-        int arr1[] = {1,2,3,4};
-        int arr2[] = {1,1,1};
+        int arr1[] = {1,0,0,0};
+        int arr2[] = {1};
         
         int ans[] = new int[arr1.length];
 
