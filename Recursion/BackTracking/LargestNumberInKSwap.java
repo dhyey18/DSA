@@ -16,14 +16,13 @@ class LargestNumberInKSwap {
         }
 
         char maxDigit = str.charAt(pointer);
-        // Find the maximum digit from current pointer to end
+
         for (int i = pointer + 1; i < str.length(); i++) {
             if (str.charAt(i) > maxDigit) {
                 maxDigit = str.charAt(i);
             }
         }
 
-        // If a better digit exists for swapping
         if (maxDigit != str.charAt(pointer)) {
             for (int i = pointer + 1; i < str.length(); i++) {
                 if (str.charAt(i) == maxDigit) {
@@ -36,7 +35,6 @@ class LargestNumberInKSwap {
                 }
             }
         } else {
-            // If no better digit exists, move to the next pointer
             largestNumberInKSwap(str, pointer + 1, k);
         }
     }
