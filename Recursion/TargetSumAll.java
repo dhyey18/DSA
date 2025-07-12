@@ -9,7 +9,7 @@ class TargetSumAll {
 
     public static void main(String args[]) {
         
-        int arr[] = {2,5,2,1,2};
+        int arr[] = {10,1,2,7,6,1,5};
 
         ArrayList<Integer> options = new ArrayList<>();
         ArrayList<ArrayList<Integer>> result = new ArrayList<>();
